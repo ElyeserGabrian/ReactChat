@@ -1,0 +1,168 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conteudo{
+    width: 60%;
+    height: 80%;
+}
+
+
+.caixa-mensagem{
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #cbbca8;
+
+    padding-top: 20px;
+    border-radius: 5px 5px 0px 0px;
+
+    overflow: auto;
+
+}
+
+.caixa-mensagem::-webkit-scrollbar{
+    display: none;
+}
+
+.caixa-inputs{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid #fff;
+    background-color: #cbbca8;
+}
+
+.inputs{
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.ipt-texto{
+    width: 90%;
+    height: 30px;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+
+    font-weight: 700;
+
+    margin-right: 15px;
+}
+
+.btn-enviar{
+    background-color: rgba(50, 115, 255, 1);
+    border: none;
+    border-radius: 5px;
+
+    padding: 10.8px 20px;
+
+    font-weight: 700;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: #fff;
+    color: #688FE2;
+}
+
+
+.mensagens{
+    width: 95%;
+    height: 100%;
+    position: relative;
+}
+
+.msg-branca{
+    margin-bottom: 10px;
+    max-width: 50%;
+    width: fit-content;
+
+    padding: 5px 10px;
+    background-color: #fff;
+    position: relative;
+    overflow: visible;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+
+.hora{
+    font-weight: 700;
+    font-size: 8px;
+    display: flex;
+    justify-content: end;
+}
+
+.msg-branca::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 11px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(45deg) translate(-6px, -1px);
+
+}
+
+.msg-azul{
+    margin-left: auto;
+    margin-bottom: 10px;
+    max-width: 50%;
+    width: fit-content;
+
+    padding: 5px 10px;
+    background-color: #688FE2;
+    position: relative;
+    overflow: visible;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    color: #fff;
+}
+
+.msg-azul::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 11px solid #688FE2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(74deg) translate(-2px, -4px);
+
+}
+
+
